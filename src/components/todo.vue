@@ -38,6 +38,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 ol {
-  color: aqua;
+  color: gray;
 }
 </style>
