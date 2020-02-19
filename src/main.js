@@ -5,6 +5,7 @@ import router from "./router";
 Vue.config.productionTip = false;
 
 Vue.component("alert", require("./components/alert.vue").default);
+Vue.component("todo", require("./components/todo.vue").default);
 Vue.component("button-counter", {
   data: function() {
     return {

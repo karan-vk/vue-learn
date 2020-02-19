@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="alert alert-primary" role="alert">
+    <div class="alert " :class="mode" role="alert">
       <slot></slot>
     </div>
   </div>
@@ -8,16 +8,22 @@
 
 <script>
 export default {
-  name: "alert"
+  name: "alert",
+  props: ["mode"]
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.alert-primary {
+.primary {
   color: #004085;
   background-color: #cce5ff;
   border-color: #b8daff;
+}
+.danger {
+  color: #ffffff;
+  background-color: #f00b0b;
+  border-color: #f00606;
 }
 .alert {
   position: relative;
